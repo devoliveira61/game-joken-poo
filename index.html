@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOKEN POO | Daniel Oliveira</title>
+    <link rel="stylesheet" href="style/script.css" />
+  </head>
+  <body>
+    <!-- Usuário jogador -->
+    <div id="principal">
+      <h1 id="titulo">JOKEN POO</h1>
+      <div id="placar">
+        <div id="jogador">
+          <h2 id="jogador-nome">Daniel</h2>
+          <span id="jogador-pontos">0</span>
+
+          <ul id="jogador-escolha">
+            <li>
+              <a id="jogador-escolha1" onclick="jogar(1)"
+                ><img src="img/pedra.png"
+              /></a>
+              <a id="jogador-escolha2" onclick="jogar(2)"
+                ><img src="img/papel.png"
+              /></a>
+              <a id="jogador-escolha3" onclick="jogar(3)"
+                ><img src="img/tesoura.png"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Computador (IA) -->
+        <div id="versus">VS</div>
+        <div id="computador">
+          <h2 id="computador-nome">Inteligencia Artificial</h2>
+          <span id="computador-pontos">0</span>
+
+          <ul id="computador-escolha">
+            <li>
+              <a id="computador-escolha1"><img src="img/pedra.png" /></a>
+              <a id="computador-escolha2"><img src="img/papel.png" /></a>
+              <a id="computador-escolha3"><img src="img/tesoura.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="mensagens">Resultado</div>
+    </div>
+    <h6>Desenvolvido por Daniel de Oliveira | 2022 &copy;</h6>
+    <script src="js/index.js"></script>
+  </body>
+</html>
